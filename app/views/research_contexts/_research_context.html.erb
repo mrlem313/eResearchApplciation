@@ -1,0 +1,16 @@
+<% @research_context = ResearchContext.new %>
+
+<div id="rcx-title">
+  <div id="rcx-title-block">Context for Researcher</div>
+</div>
+
+<div id="rcx-option">
+	<%= simple_form_for @research_context do |f| %>
+	    <%= f.input :classification, :label => 'Classification:', :collection => [['Class Assignment', 1], ['Dissertation', 2], ['Thesis', 3], ['Other', 4]], 
+	as: :radio_buttons %> </br>
+	If "Other", please explain (federal data collection, state data collection, grant procedure, etc.)
+	<%= f.input :other, :label => false, as: :text, :input_html => { :rows => 7 , :style => 'width: 90%'} %>
+
+		<div id="submit-rcx"><%= f.submit %></div>
+		<% end %>
+</div>

@@ -1,0 +1,16 @@
+<%= form_for @research_data do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :data_collected_by_researcher %><br />
+    <%= f.text_field :data_collected_by_researcher %>
+  </p>
+  <p>
+    <%= f.label :collection_instrument %><br />
+    <%= f.text_field :collection_instrument %>
+  </p>
+  <p>
+    <%= f.label :eta_of_data %><br />
+    <%= f.text_field :eta_of_data %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

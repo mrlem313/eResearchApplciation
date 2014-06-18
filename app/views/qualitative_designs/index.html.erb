@@ -1,0 +1,21 @@
+<% title "Qualitative Designs" %>
+
+<table>
+  <tr>
+    <th>Theoretical Frmwrk</th>
+    <th>Coding Scheme</th>
+    <th>Data Validation Procedure</th>
+  </tr>
+  <% for qualitative_design in @qualitative_designs %>
+    <tr>
+      <td><%= qualitative_design.theoretical_frmwrk %></td>
+      <td><%= qualitative_design.coding_scheme %></td>
+      <td><%= qualitative_design.data_validation_procedure %></td>
+      <td><%= link_to "Show", qualitative_design %></td>
+      <td><%= link_to "Edit", edit_qualitative_design_path(qualitative_design) %></td>
+      <td><%= link_to "Destroy", qualitative_design, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Qualitative Design", new_qualitative_design_path %></p>

@@ -1,0 +1,16 @@
+<% title "Context" %>
+
+<p>
+  <strong>Classification:</strong>
+  <%= @context.classification %>
+</p>
+<p>
+  <strong>Other:</strong>
+  <%= @context.other %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_context_path(@context) %> |
+  <%= link_to "Destroy", @context, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", contexts_path %>
+</p>

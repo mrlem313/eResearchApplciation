@@ -1,0 +1,45 @@
+one:
+  fname: 
+  midinit: 
+  lname: 
+  address: 
+  city: 
+  state: 
+  zipcode: 
+  hphone: 
+  mphone: 
+  email_addr: 
+  job_title: 
+  employer: 
+  emp_addr: 
+  emp_city: 
+  emp_state: 
+  emp_zip: 
+  prof_institution: 
+  mjr_prof: 
+  prof_addr: 
+  prof_phone: 
+  prof_email_addr: 
+
+two:
+  fname: 
+  midinit: 
+  lname: 
+  address: 
+  city: 
+  state: 
+  zipcode: 
+  hphone: 
+  mphone: 
+  email_addr: 
+  job_title: 
+  employer: 
+  emp_addr: 
+  emp_city: 
+  emp_state: 
+  emp_zip: 
+  prof_institution: 
+  mjr_prof: 
+  prof_addr: 
+  prof_phone: 
+  prof_email_addr: 

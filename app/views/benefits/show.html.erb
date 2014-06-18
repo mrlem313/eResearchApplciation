@@ -1,0 +1,12 @@
+<% title "Benefits" %>
+
+<p>
+  <strong>Description:</strong>
+  <%= @benefits.description %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_benefits_path(@benefits) %> |
+  <%= link_to "Destroy", @benefits, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", benefits_path %>
+</p>

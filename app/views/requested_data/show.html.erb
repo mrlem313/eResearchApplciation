@@ -1,0 +1,20 @@
+<% title "Requested Data" %>
+
+<p>
+  <strong>Data Requested:</strong>
+  <%= @requested_data.data_requested %>
+</p>
+<p>
+  <strong>Data Src Location:</strong>
+  <%= @requested_data.data_src_location %>
+</p>
+<p>
+  <strong>Eta Of Requested Data:</strong>
+  <%= @requested_data.eta_of_requested_data %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_requested_data_path(@requested_data) %> |
+  <%= link_to "Destroy", @requested_data, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", requested_data_path %>
+</p>

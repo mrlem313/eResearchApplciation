@@ -1,0 +1,2 @@
+module QualitativeDesignsHelper
+end

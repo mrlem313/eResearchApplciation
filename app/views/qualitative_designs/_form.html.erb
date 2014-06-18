@@ -1,0 +1,16 @@
+<%= form_for @qualitative_design do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :theoretical_frmwrk %><br />
+    <%= f.text_field :theoretical_frmwrk %>
+  </p>
+  <p>
+    <%= f.label :coding_scheme %><br />
+    <%= f.text_field :coding_scheme %>
+  </p>
+  <p>
+    <%= f.label :data_validation_procedure %><br />
+    <%= f.text_field :data_validation_procedure %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

@@ -1,0 +1,17 @@
+<% title "Methodology Research Design Infos" %>
+
+<table>
+  <tr>
+    <th>Description</th>
+  </tr>
+  <% for methodology_research_design_info in @methodology_research_design_infos %>
+    <tr>
+      <td><%= methodology_research_design_info.description %></td>
+      <td><%= link_to "Show", methodology_research_design_info %></td>
+      <td><%= link_to "Edit", edit_methodology_research_design_info_path(methodology_research_design_info) %></td>
+      <td><%= link_to "Destroy", methodology_research_design_info, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Methodology Research Design Info", new_methodology_research_design_info_path %></p>

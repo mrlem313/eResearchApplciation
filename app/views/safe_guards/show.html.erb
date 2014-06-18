@@ -1,0 +1,16 @@
+<% title "Safe Guard" %>
+
+<p>
+  <strong>Description:</strong>
+  <%= @safe_guard.description %>
+</p>
+<p>
+  <strong>Step:</strong>
+  <%= @safe_guard.step %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_safe_guard_path(@safe_guard) %> |
+  <%= link_to "Destroy", @safe_guard, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", safe_guards_path %>
+</p>

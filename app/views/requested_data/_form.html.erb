@@ -1,0 +1,16 @@
+<%= form_for @requested_data do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :data_requested %><br />
+    <%= f.text_field :data_requested %>
+  </p>
+  <p>
+    <%= f.label :data_src_location %><br />
+    <%= f.text_field :data_src_location %>
+  </p>
+  <p>
+    <%= f.label :eta_of_requested_data %><br />
+    <%= f.text_field :eta_of_requested_data %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

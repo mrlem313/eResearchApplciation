@@ -1,0 +1,24 @@
+<% title "Goal" %>
+
+<p>
+  <strong>Study Significance:</strong>
+  <%= @goal.study_significance %>
+</p>
+<p>
+  <strong>Rationale:</strong>
+  <%= @goal.rationale %>
+</p>
+<p>
+  <strong>Citation:</strong>
+  <%= @goal.citation %>
+</p>
+<p>
+  <strong>Problem Statement:</strong>
+  <%= @goal.problem_statement %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_goal_path(@goal) %> |
+  <%= link_to "Destroy", @goal, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", goals_path %>
+</p>

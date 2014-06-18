@@ -1,0 +1,20 @@
+<%= form_for @goal do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :study_significance %><br />
+    <%= f.text_field :study_significance %>
+  </p>
+  <p>
+    <%= f.label :rationale %><br />
+    <%= f.text_field :rationale %>
+  </p>
+  <p>
+    <%= f.label :citation %><br />
+    <%= f.text_field :citation %>
+  </p>
+  <p>
+    <%= f.label :problem_statement %><br />
+    <%= f.text_field :problem_statement %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

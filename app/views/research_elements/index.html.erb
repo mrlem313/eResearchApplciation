@@ -1,0 +1,25 @@
+<% title "Research Elements" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Number Involved</th>
+    <th>Group Name</th>
+    <th>Grp No Per Class</th>
+    <th>Classification</th>
+  </tr>
+  <% for research_element in @research_elements %>
+    <tr>
+      <td><%= research_element.name %></td>
+      <td><%= research_element.number_involved %></td>
+      <td><%= research_element.group_name %></td>
+      <td><%= research_element.grp_no_per_class %></td>
+      <td><%= research_element.classification %></td>
+      <td><%= link_to "Show", research_element %></td>
+      <td><%= link_to "Edit", edit_research_element_path(research_element) %></td>
+      <td><%= link_to "Destroy", research_element, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Research Element", new_research_element_path %></p>

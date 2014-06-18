@@ -1,0 +1,20 @@
+<% title "Qualitative Design" %>
+
+<p>
+  <strong>Theoretical Frmwrk:</strong>
+  <%= @qualitative_design.theoretical_frmwrk %>
+</p>
+<p>
+  <strong>Coding Scheme:</strong>
+  <%= @qualitative_design.coding_scheme %>
+</p>
+<p>
+  <strong>Data Validation Procedure:</strong>
+  <%= @qualitative_design.data_validation_procedure %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_qualitative_design_path(@qualitative_design) %> |
+  <%= link_to "Destroy", @qualitative_design, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", qualitative_designs_path %>
+</p>

@@ -1,0 +1,48 @@
+<% title "Co Researcher" %>
+
+<p>
+  <strong>Fname:</strong>
+  <%= @co_researcher.fname %>
+</p>
+<p>
+  <strong>Midinit:</strong>
+  <%= @co_researcher.midinit %>
+</p>
+<p>
+  <strong>Lname:</strong>
+  <%= @co_researcher.lname %>
+</p>
+<p>
+  <strong>Address:</strong>
+  <%= @co_researcher.address %>
+</p>
+<p>
+  <strong>City:</strong>
+  <%= @co_researcher.city %>
+</p>
+<p>
+  <strong>State:</strong>
+  <%= @co_researcher.state %>
+</p>
+<p>
+  <strong>Zipcode:</strong>
+  <%= @co_researcher.zipcode %>
+</p>
+<p>
+  <strong>Hphone:</strong>
+  <%= @co_researcher.hphone %>
+</p>
+<p>
+  <strong>Mphone:</strong>
+  <%= @co_researcher.mphone %>
+</p>
+<p>
+  <strong>Email Addr:</strong>
+  <%= @co_researcher.email_addr %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_co_researcher_path(@co_researcher) %> |
+  <%= link_to "Destroy", @co_researcher, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", co_researchers_path %>
+</p>

@@ -1,0 +1,17 @@
+<% title "Research Samplings" %>
+
+<table>
+  <tr>
+    <th>How Participants Selected</th>
+  </tr>
+  <% for research_sampling in @research_samplings %>
+    <tr>
+      <td><%= research_sampling.how_participants_selected %></td>
+      <td><%= link_to "Show", research_sampling %></td>
+      <td><%= link_to "Edit", edit_research_sampling_path(research_sampling) %></td>
+      <td><%= link_to "Destroy", research_sampling, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Research Sampling", new_research_sampling_path %></p>

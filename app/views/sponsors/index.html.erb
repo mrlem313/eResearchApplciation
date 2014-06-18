@@ -1,0 +1,31 @@
+<% title "Sponsors" %>
+
+<table>
+  <tr>
+    <th>Lname</th>
+    <th>Midinit</th>
+    <th>Lname</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zipcode</th>
+    <th>Email Addr</th>
+  </tr>
+  <% for sponsor in @sponsors %>
+    <tr>
+      <td><%= sponsor.lname %></td>
+      <td><%= sponsor.midinit %></td>
+      <td><%= sponsor.lname %></td>
+      <td><%= sponsor.address %></td>
+      <td><%= sponsor.city %></td>
+      <td><%= sponsor.state %></td>
+      <td><%= sponsor.zipcode %></td>
+      <td><%= sponsor.email_addr %></td>
+      <td><%= link_to "Show", sponsor %></td>
+      <td><%= link_to "Edit", edit_sponsor_path(sponsor) %></td>
+      <td><%= link_to "Destroy", sponsor, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Sponsor", new_sponsor_path %></p>

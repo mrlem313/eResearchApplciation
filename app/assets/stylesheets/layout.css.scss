@@ -1,0 +1,439 @@
+$main-color: #989A98;
+
+@mixin rounded-corners($radius) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+
+}
+
+
+
+body {
+  border: 1px #888888 solid;
+  -moz-box-shadow: 0px 0px 2px 2px #888888;
+  -webkit-box-shadow: 0px 0px 2px 2px #888888;
+  box-shadow: 0px 0px 2px 2px #888888; 
+  margin: 10;
+  padding: 10;
+  background-color: #FFF;
+  font-family: verdana;
+  font-size: 14px;
+  height: 7000px;
+}
+
+#header {
+  width: inherit;
+  border: 1px #888888 solid;
+  text-shadow: black 0.1em 0.1em 0.2em;
+  background-color: $main-color;
+  color: #FFF;
+  padding: 4px 100px;
+  border-bottom: solid 1px darken($main-color, 10%);
+  text-indent: 100px;
+
+  h1 {
+    font-size: 60px;
+  }
+
+}
+
+#sub-header {
+  border: 1px #888888 solid;
+  margin-left: 100px;
+  background-color: #DDC291; 
+  width: 77%;
+  padding: 4px 100px;
+  text-align: center;
+  color: white; 
+  text-shadow: black 0.1em 0.1em 0.2em
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+#container {
+  margin: 0px;  
+
+      img {
+        z-index: 10;
+        position: absolute;
+        top: 20px;
+        left: 30px;
+      }
+
+      #proposed-study {
+
+          background-color: #FFF; 
+          width: 77.5%;
+          height: 50px;
+          padding: 4px 10px; 
+          padding-left: 10px;
+          margin-left: 230px;
+          margin-bottom: 20px;
+          margin-top: 20px;
+          font-size: .9em;
+
+
+          #rs-app-title-left, #rs-app-fname-left, #rs-app-midinit-left, #rs-app-lname-left 
+                   {  width: 30%;
+                      height: 66%;  
+                      padding-top: 10px;
+                      padding-left: 5px;
+                      float:left;
+                      text-align: left;
+                      border: 1px #888888 solid;
+                      background-color: #CEE7DA; 
+                    }
+
+
+          #rs-app-title-right, #rs-app-fname-right, #rs-app-midinit-right, #rs-app-lname-right
+                    { 
+                      width: 69%; 
+                      height: 86%;
+                      float:right; 
+                      border: 1px #888888 solid;
+                      background-color: #FFF;
+                      padding-top: 2px;
+                      padding-bottom: 1px;
+                    } 
+  
+
+          #submit_app
+                    {
+                        padding-top: 5px;
+                        padding-bottom: 20px;
+                        float:left;
+                    }  
+    }
+
+
+  #contact-info {
+
+      background-color: #FFF; 
+      width: 77.5%;
+      height: 50px;
+      padding: 4px 10px; 
+      padding-left: 10px;
+      margin-left: 230px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      font-size: .9em;
+
+      #contact_title, #addtnl-contact_title 
+              {
+                  width: 99.3%;
+                  height: 66%;  
+                  padding-top: 10px;
+                  padding-left: 5px;
+                  float:left;
+                  text-align: left;
+                  border: 1px #888888 solid;
+                  background-color: #CEE7DA;
+              }
+
+
+      #ci-name-left 
+               {  width: 30%;
+                  height: 66%;  
+                  padding-top: 10px;
+                  padding-left: 5px;
+                  float:left;
+                  text-align: left;
+                  border: 1px #888888 solid;
+                  background-color: #CEE7DA; 
+                }   
+
+
+      #ci-name-right,
+                { width: 69%; 
+                  height: 86%;
+                  float:right; 
+                  border: 1px #888888 solid;
+                  background-color: #FFF;
+                  padding-top: 10px;
+                } 
+
+      #ci-addr-left, #ci-hphone-left, #ci-mphone-left, #ci-email-left, #ci-job-left,
+      #ci-emp-left, #ci-emp-addr-left, #ci-emp-city-left, #ci-emp-state-left, #ci-emp-zip-left,
+      #ci-prof-univ-left, #ci-prof-name-left, #ci-prof-addr-left, #ci-prof-phone-left, #ci-prof-email-left
+               {  width: 30%;
+                  height: 66%;  
+                  padding-top: 10px;
+                  padding-left: 5px;
+                  float:left;
+                  text-align: left;
+                  border: 1px #888888 solid;
+                  background-color: #CEE7DA; 
+                }   
+      
+
+      #ci-addr-right, #ci-hphone-right, #ci-mphone-right, #ci-email-right, #ci-job-right,
+      #ci-emp-right, #ci-emp-addr-right, #ci-emp-city-right, #ci-emp-state-right, #ci-emp-zip-right,
+      #ci-prof-univ-right, #ci-prof-name-right, #ci-prof-addr-right, #ci-prof-phone-right, #ci-prof-email-right
+                { width: 69%; 
+                  height: 86%;
+                  float:right; 
+                  border: 1px #888888 solid;
+                  background-color: #FFF;
+                  padding-top: 2px;
+                  padding-bottom: 1px;
+                } 
+
+
+        #submit-ci {
+            padding-top: 5px;
+            padding-bottom: 20px;
+            float:left;
+          }          
+    }  
+
+
+  
+  #co-rearchers-info {  
+
+      background-color: #FFF; 
+      width: 77.5%;
+      height: 50px;
+      padding: 4px 10px; 
+      padding-left: 10px;
+      margin-left: 230px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      font-size: .9em;    
+
+      #cor_title
+              {
+                  width: 99.3%;
+                  height: 66%;  
+                  padding-top: 10px;
+                  padding-left: 5px;
+                  float:left;
+                  text-align: left;
+                  border: 1px #888888 solid;
+                  background-color: #CEE7DA;
+              } 
+
+       #cor-1
+              {
+                    #co-r-fname-left, #co-r-midinit-left, #co-r-lname-left, #co-r-address-left, #co-r-city-left,#co-r-state-left, #co-r-zipcode-left, #co-r-hphone-left, #co-r-cphone-left, #co-r-email_addr-left
+
+                             {  width: 30%;
+                                height: 66%;  
+                                padding-top: 10px;
+                                padding-left: 5px;
+                                float:left;
+                                text-align: left;
+                                border: 1px #888888 solid;
+                                background-color: #CEE7DA; 
+                              }
+
+                    #co-r-fname-right, #co-r-midinit-right, #co-r-lname-right, #co-r-address-right, #co-r-city-right,#co-r-state-right, #co-r-zipcode-right, #co-r-hphone-right, #co-r-cphone-right, #co-r-email_addr-right
+
+                              {   width: 69%; 
+                                  height: 86%;
+                                  float:right; 
+                                  border: 1px #888888 solid;
+                                  background-color: #FFF;
+                                  padding-top: 2px;
+                                  padding-bottom: 1px;
+                                } 
+
+
+                    #submit-cor {
+                                  padding-top: 5px;
+                                  padding-bottom: 20px;
+                                  float:left;                      
+                                }
+
+                }
+
+
+  }
+
+
+  #sponsor-info {  
+
+      background-color: #FFF; 
+      width: 77.5%;
+      height: 50px;
+      padding: 4px 10px; 
+      padding-left: 10px;
+      margin-left: 230px;
+      margin-bottom: 20px;
+      margin-top: 20px;
+      font-size: .9em;    
+
+      #sp-title
+              {
+                  width: 99.3%;
+                  height: 66%;  
+                  padding-top: 10px;
+                  padding-left: 5px;
+                  float:left;
+                  text-align: left;
+                  border: 1px #888888 solid;
+                  background-color: #CEE7DA;
+              }    
+
+       #sp-1
+            {
+              #sp-r-fname-left, #sp-r-midinit-left, #sp-r-lname-left, #sp-r-address-left, #sp-r-city-left,#sp-r-state-left, #sp-r-zipcode-left, #sp-r-hphone-left,  #sp-r-email_addr-left
+
+                       {  width: 30%;
+                          height: 66%;  
+                          padding-top: 10px;
+                          padding-left: 5px;
+                          float:left;
+                          text-align: left;
+                          border: 1px #888888 solid;
+                          background-color: #CEE7DA; 
+                        }
+
+              #sp-r-fname-right, #sp-r-midinit-right, #sp-r-lname-right, #sp-r-address-right, #sp-r-city-right,#sp-r-state-right, #sp-r-zipcode-right, #sp-r-hphone-right, #sp-r-email_addr-right
+
+                        {   width: 69%; 
+                            height: 86%;
+                            float:right; 
+                            border: 1px #888888 solid;
+                            background-color: #FFF;
+                            padding-top: 2px;
+                            padding-bottom: 1px;
+                          } 
+
+
+              #submit-sp {
+                            padding-top: 5px;
+                            padding-bottom: 20px;
+                            float:left;                      
+                          }         
+            }
+
+      }
+
+      #research-context-info
+              {
+                background-color: #FFF; 
+                width: 77.5%;
+                height: 50px;
+                padding: 4px 10px; 
+                padding-left: 10px;
+                margin-left: 230px;
+                margin-bottom: 20px;
+                margin-top: 20px;
+                font-size: .9em; 
+               
+
+              #rcx-title
+                  {
+                      width: 99.3%;
+                      height: 66%;  
+                      padding-top: 10px;
+                      padding-left: 5px;
+                      float:left;
+                      text-align: left;
+                      border: 1px #888888 solid;
+                      background-color: #CEE7DA;
+                  }
+
+            #rcx-option 
+                  {
+                        width: 99.3%;
+                        height: 66%;  
+                        padding-top: 10px;
+                        padding-left: 5px;
+                        float:left;
+                        text-align: left;
+                        border: 1px #888888 solid;
+                        background-color: #FFFFFF;                  
+                        margin-bottom: 20px;
+                  }
+
+                  
+            #submit-rcx {
+                            padding-top: 20px;
+                            padding-bottom: 10px;
+                            float:left;                      
+                          }                   
+
+            .radio {
+                  padding-top: 10px;
+                  padding-left: 40px;
+            }
+      }
+
+  
+
+  
+ #research-goal-info
+          {
+            background-color: #FFF; 
+            width: 77.5%;
+            height: 50px;
+            padding: 4px 10px; 
+            padding-left: 10px;
+            margin-left: 230px;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            font-size: .9em; 
+           
+
+          #rg-title
+              {
+                  width: 99.3%;
+                  height: 66%;  
+                  padding-top: 10px;
+                  padding-left: 5px;
+                  float:left;
+                  text-align: center;
+                  border: 1px #888888 solid;
+                  background-color: #CEE7DA;
+              }                  
+
+          #rg-statement, #rg-rationale  
+              {
+                  width: 99.3%;
+                  height: 66%;  
+                  padding-top: 10px;
+                  padding-left: 5px;
+                  float:left;
+                  text-align: left;
+                  border: 1px #888888 solid;
+                  background-color: #FFFFFF;
+              }                    
+
+            #submit-rg, #submit-rtnle, #submit-cite 
+                          {
+                            padding-top: 20px;
+                            padding-bottom: 10px;
+                            float:left;                      
+                          } 
+    }      
+}              
+
+
+
+
+
+#menu {
+  background-color:#8486BE;
+  color: #FFF;
+  width:200px;
+  float:left;
+  height: 6945px;
+  border-right: solid 2px darken($main-color, 10%);
+}
+
+#footer {
+  text-align:center;
+  background-color: #DDC291;
+  border-top: solid 2px darken($main-color, 10%);
+  positon: bottom;
+  clear: both;
+}
+

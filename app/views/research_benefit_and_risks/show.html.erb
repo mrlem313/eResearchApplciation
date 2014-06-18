@@ -1,0 +1,16 @@
+<% title "Research Benefit And Risk" %>
+
+<p>
+  <strong>Benefit:</strong>
+  <%= @research_benefit_and_risk.benefit %>
+</p>
+<p>
+  <strong>Risk:</strong>
+  <%= @research_benefit_and_risk.risk %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_research_benefit_and_risk_path(@research_benefit_and_risk) %> |
+  <%= link_to "Destroy", @research_benefit_and_risk, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", research_benefit_and_risks_path %>
+</p>

@@ -1,0 +1,34 @@
+<% @research_application = ResearchApplication.find_by_id(1) %>
+<% @researcher = Researcher.find_by_id(1) %>
+<% @co_researcher = CoResearcher.new %>
+
+<div id="cor_title">
+  <div id="cor-title-block">Co-Researchers</div>
+</div>
+
+<div id="cor-1">
+		<%= simple_nested_form_for [@research_application, @researcher, @co_researcher] do |f| %>
+			<div id="co-r-fname-left">First Name</div>
+			<div id="co-r-fname-right"><%= f.text_field :fname, :maxlength => "75" %></div> 
+			<div id="co-r-midinit-left">Middle Init</div>
+			<div id="co-r-midinit-right"><%= f.text_field :midinit, :maxlength => "75" %></div> 
+			<div id="co-r-lname-left">Last Name</div>
+			<div id="co-r-lname-right"><%= f.text_field :lname, :maxlength => "75" %></div> 
+			<div id="co-r-address-left">Address</div>
+			<div id="co-r-address-right"><%= f.text_field :address, :maxlength => "75" %></div> 
+			<div id="co-r-city-left">City</div>
+			<div id="co-r-city-right"><%= f.text_field :city, :maxlength => "75" %></div> 
+			<div id="co-r-state-left">State</div>
+			<div id="co-r-state-right"><%= f.text_field :state, :maxlength => "75" %></div>
+			<div id="co-r-zipcode-left">Zip Code</div>
+			<div id="co-r-zipcode-right"><%= f.text_field :zipcode, :maxlength => "75" %></div>
+			<div id="co-r-hphone-left">Phone Number</div>
+			<div id="co-r-hphone-right"><%= f.text_field :hphone, :maxlength => "75" %></div>
+			<div id="co-r-cphone-left">Mobile Number</div>
+			<div id="co-r-cphone-right"><%= f.text_field :mphone, :maxlength => "75" %></div>    
+			<div id="co-r-email_addr-left">Email Address</div>
+			<div id="co-r-email_addr-right"><%= f.text_field :email_addr, :maxlength => "75" %></div>
+			<div id="submit-cor"><%= f.submit %></div>
+
+		<% end %>
+</div>

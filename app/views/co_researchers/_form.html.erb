@@ -1,0 +1,11 @@
+<% @research_application = ResearchApplication.find_by_id(1) %>
+<% @researcher = Researcher.find_by_id(1) %>
+
+<%= simple_nested_form_for [@research_application, @researcher] do |f| %>
+
+    <div>
+        <%= f.fields_for :co_researchers do |builder| %>
+            <%= render 'researchers/co_researcher_fields', f: builder %>
+        <% end %>
+    </div>
+<% end %>

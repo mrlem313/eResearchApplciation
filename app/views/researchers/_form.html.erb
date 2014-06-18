@@ -1,0 +1,99 @@
+<% @research_application = ResearchApplication.find_by_id(1) %>
+<% @researcher = Researcher.new %>
+
+<%= simple_form_for [@research_application, @researcher] do |f| %>
+    <div id="contact_title">
+      <div id="ci-title-block">Contact Information</div>
+    </div>
+
+    <div id="ci-name">
+      <div id="ci-name-left">Researcher Name</div>
+      <div id="ci-name-right"><%= session[:applicant] %></div> 
+    </div>
+
+    <div id="ci-addr">
+      <div id="ci-addr-left">Address</div>
+      <div id="ci-addr-right"><%= f.text_field :address, :maxlength => "75" %></div> 
+    </div>    
+
+    <div id="ci-hphone">
+      <div id="ci-hphone-left">Phone Number</div>
+      <div id="ci-hphone-right"><%= f.text_field :hphone, :maxlength => "75" %></div> 
+    </div> 
+
+    <div id="ci-mphone">
+      <div id="ci-mphone-left">Mobile Phone</div>
+      <div id="ci-mphone-right"><%= f.text_field :mphone, :maxlength => "75" %></div> 
+    </div> 
+
+    <div id="ci-email">
+      <div id="ci-email-left">Email Address</div>
+      <div id="ci-email-right"><%= f.text_field :email_addr, :maxlength => "75" %></div> 
+    </div>  
+
+    <div id="ci-job">
+      <div id="ci-job-left">Job Title</div>
+      <div id="ci-job-right"><%= f.text_field :job_title, :maxlength => "75" %></div> 
+    </div>
+
+    <div id="ci-emp">
+      <div id="ci-emp-left">Employer</div>
+      <div id="ci-emp-right"><%= f.text_field :employer, :maxlength => "75" %></div> 
+    </div>    
+
+    <div id="ci-emp_addr">
+      <div id="ci-emp-addr-left">Employer Address</div>
+      <div id="ci-emp-addr-right"><%= f.text_field :emp_addr, :maxlength => "75" %></div> 
+    </div> 
+
+    <div id="ci-emp-city">
+      <div id="ci-emp-city-left">Employer City</div>
+      <div id="ci-emp-city-right"><%= f.text_field :emp_city, :maxlength => "75" %></div> 
+    </div> 
+
+    <div id="ci-emp-state">
+      <div id="ci-emp-state-left">Employer State</div>
+      <div id="ci-emp-state-right"><%= f.text_field :emp_state, :maxlength => "75" %></div>
+    </div>   
+
+   <div id="ci-emp-zip">
+      <div id="ci-emp-zip-left">Employer Zip Code</div>
+      <div id="ci-emp-zip-right"><%= f.text_field :emp_zip, :maxlength => "75" %></div> 
+    </div>   
+
+    <div id="addtnl-contact_title">
+      <div id="addtnl-ci-title-block">Additional Contact Information</div>
+    </div> 
+
+    <div id="ci-prof-univ">
+      <div id="ci-prof-univ-left">Professor Instutition</div>
+      <div id="ci-prof-univ-right"><%= f.text_field :prof_institution, :maxlength => "75" %></div> 
+    </div>
+
+    <div id="ci-prof-name">
+      <div id="ci-prof-name-left">Professor Name</div>
+      <div id="ci-prof-name-right"><%= f.text_field :mjr_prof, :maxlength => "75" %></div> 
+    </div>
+
+    <div id="ci-prof-addr">
+      <div id="ci-prof-addr-left">Address</div>
+      <div id="ci-prof-addr-right"><%= f.text_field :prof_addr, :maxlength => "75" %></div> 
+    </div> 
+
+    <div id="ci-prof-phone">
+      <div id="ci-prof-phone-left">Phone</div>
+      <div id="ci-prof-phone-right"><%= f.text_field :prof_phone, :maxlength => "75" %></div> 
+    </div> 
+
+    <div id="ci-prof-email">
+      <div id="ci-prof-email-left">Email Address</div>
+      <div id="ci-prof-email-right"><%= f.text_field :prof_email_addr, :maxlength => "75" %></div> 
+    </div>           
+
+    <div id="submit-ci"><%= f.submit %></div>
+
+
+
+    <%= f.hidden_field :applicant_id, :value => session[:applicant_id] %> 
+<% end %>
+

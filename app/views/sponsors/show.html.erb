@@ -1,0 +1,40 @@
+<% title "Sponsor" %>
+
+<p>
+  <strong>Lname:</strong>
+  <%= @sponsor.lname %>
+</p>
+<p>
+  <strong>Midinit:</strong>
+  <%= @sponsor.midinit %>
+</p>
+<p>
+  <strong>Lname:</strong>
+  <%= @sponsor.lname %>
+</p>
+<p>
+  <strong>Address:</strong>
+  <%= @sponsor.address %>
+</p>
+<p>
+  <strong>City:</strong>
+  <%= @sponsor.city %>
+</p>
+<p>
+  <strong>State:</strong>
+  <%= @sponsor.state %>
+</p>
+<p>
+  <strong>Zipcode:</strong>
+  <%= @sponsor.zipcode %>
+</p>
+<p>
+  <strong>Email Addr:</strong>
+  <%= @sponsor.email_addr %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_sponsor_path(@sponsor) %> |
+  <%= link_to "Destroy", @sponsor, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", sponsors_path %>
+</p>

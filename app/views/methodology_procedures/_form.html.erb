@@ -1,0 +1,32 @@
+<%= form_for @methodology_procedure do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :prj_start_date %><br />
+    <%= f.text_field :prj_start_date %>
+  </p>
+  <p>
+    <%= f.label :prj_end_date %><br />
+    <%= f.text_field :prj_end_date %>
+  </p>
+  <p>
+    <%= f.label :data_collect_start_date %><br />
+    <%= f.text_field :data_collect_start_date %>
+  </p>
+  <p>
+    <%= f.label :data_collect_end_date %><br />
+    <%= f.text_field :data_collect_end_date %>
+  </p>
+  <p>
+    <%= f.label :no_of_comparison_grps %><br />
+    <%= f.text_field :no_of_comparison_grps %>
+  </p>
+  <p>
+    <%= f.label :rel_to_research_participants %><br />
+    <%= f.text_field :rel_to_research_participants %>
+  </p>
+  <p>
+    <%= f.label :based_on_intervention %><br />
+    <%= f.text_field :based_on_intervention %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

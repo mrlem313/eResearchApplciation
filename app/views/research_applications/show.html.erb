@@ -1,0 +1,20 @@
+<% "Research Application" %>
+
+<p>
+  <strong>Title:</strong>
+  <% if @research_application %>
+  	<%= @research_application.title %>
+  <% end %>
+</p>
+<p>
+  <strong>Owner:</strong>
+  <% if @research_application %>
+  	<%= @research_application.owner %>
+  	<% end %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_research_application_path(@research_application) %> |
+  <%= link_to "Destroy", @research_application, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", research_applications_path %>
+</p>

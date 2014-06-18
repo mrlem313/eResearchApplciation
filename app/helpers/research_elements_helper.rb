@@ -1,0 +1,2 @@
+module ResearchElementsHelper
+end

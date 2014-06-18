@@ -1,0 +1,17 @@
+<% title "Data Analysis Methods" %>
+
+<table>
+  <tr>
+    <th>Description</th>
+  </tr>
+  <% for data_analysis_method in @data_analysis_methods %>
+    <tr>
+      <td><%= data_analysis_method.description %></td>
+      <td><%= link_to "Show", data_analysis_method %></td>
+      <td><%= link_to "Edit", edit_data_analysis_method_path(data_analysis_method) %></td>
+      <td><%= link_to "Destroy", data_analysis_method, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Data Analysis Method", new_data_analysis_method_path %></p>

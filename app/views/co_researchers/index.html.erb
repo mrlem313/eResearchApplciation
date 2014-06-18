@@ -1,0 +1,35 @@
+<% title "Co Researchers" %>
+
+<table>
+  <tr>
+    <th>Fname</th>
+    <th>Midinit</th>
+    <th>Lname</th>
+    <th>Address</th>
+    <th>City</th>
+    <th>State</th>
+    <th>Zipcode</th>
+    <th>Hphone</th>
+    <th>Mphone</th>
+    <th>Email Addr</th>
+  </tr>
+  <% for co_researcher in @co_researchers %>
+    <tr>
+      <td><%= co_researcher.fname %></td>
+      <td><%= co_researcher.midinit %></td>
+      <td><%= co_researcher.lname %></td>
+      <td><%= co_researcher.address %></td>
+      <td><%= co_researcher.city %></td>
+      <td><%= co_researcher.state %></td>
+      <td><%= co_researcher.zipcode %></td>
+      <td><%= co_researcher.hphone %></td>
+      <td><%= co_researcher.mphone %></td>
+      <td><%= co_researcher.email_addr %></td>
+      <td><%= link_to "Show", co_researcher %></td>
+      <td><%= link_to "Edit", edit_co_researcher_path(co_researcher) %></td>
+      <td><%= link_to "Destroy", co_researcher, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Co Researcher", new_co_researcher_path %></p>

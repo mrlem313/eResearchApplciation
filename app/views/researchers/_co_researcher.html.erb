@@ -1,0 +1,17 @@
+<% @research_application = ResearchApplication.find_by_id(1) %>
+<% @researcher = Researcher.find_by_id(1) %>
+<% @co_researcher = CoResearcher.new %>
+
+<div id="cor_title">
+  <div id="cor-title-block">Co-Researchers</div>
+</div>
+
+<div id="cor-1">
+<%= simple_nested_form_for [@research_application, @researcher, @co_researcher], remote: true do |f| %>
+      <%= f.fields_for :co_researchers do |builder| %>
+        <%= render 'researchers/co_researcher_fields', f: builder %>
+      <% end %>
+      <div id="submit-cor"><%= f.submit %></div>
+      <p><%#= f.link_to_add "Add a Co-Researcher", :co_researchers %></p>
+      <% end %>
+</div>

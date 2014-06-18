@@ -1,0 +1,8 @@
+<%= form_for @research_sampling do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :how_participants_selected %><br />
+    <%= f.text_field :how_participants_selected %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

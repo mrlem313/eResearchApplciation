@@ -1,0 +1,12 @@
+<%= form_for @safe_guard do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :description %><br />
+    <%= f.text_field :description %>
+  </p>
+  <p>
+    <%= f.label :step %><br />
+    <%= f.text_field :step %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

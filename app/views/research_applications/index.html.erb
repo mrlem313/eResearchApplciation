@@ -1,0 +1,19 @@
+<% "Research Applications" %>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Owner</th>
+  </tr>
+  <% for research_application in @research_applications %>
+    <tr>
+      <td><%= research_application.title %></td>
+      <td><%= research_application.owner %></td>
+      <td><%= link_to "Show", research_application %></td>
+      <td><%= link_to "Edit", edit_research_application_path(research_application) %></td>
+      <td><%= link_to "Destroy", research_application, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Research Application", new_research_application_path %></p>

@@ -1,0 +1,14 @@
+<% @context = Context.new %>
+
+<%= simple_form_for @context do |f| %>
+  <%#= f.error_messages %>
+  <p>
+    <%= f.label :classification %><br />
+    <%= f.text_field :classification %>
+  </p>
+  <p>
+    <%= f.label :other %><br />
+    <%= f.text_field :other %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

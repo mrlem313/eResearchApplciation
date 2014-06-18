@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+  <title>e ~ Research Application</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<div id="container">
+	<img src="images/ribbon.png" class="logo"/>
+
+	<div id="header">
+		e~Research Application
+		<div id="sub-header">
+			Identification of the Research
+		</div>
+	</div>
+
+	<div id="menu">
+	<b>Menu</b><br>
+	HTML<br>
+	CSS<br>
+	JavaScript</div>
+
+	<div id="content">
+
+		<div id="proposed-study">
+			<div id="ps-app"><%= render "research_applications/form" %></div>		
+		</div>
+
+		<div id="contact-info">
+			<div id="ci-info"><%= render "researchers/form" %></div>		
+		</div>	
+
+		<div id="co-rearchers-info">
+			<div id="cor-info"><%= render "researchers/co_researcher" %></div>		
+		</div>	
+
+		<div id="sponsor-info">
+			<div id="sp-info"><%= render "sponsors/sponsors" %></div>		
+		</div>				
+
+		<div id="research-context-info">
+			<div id="rcx-info"><%= render "research_contexts/research_context" %></div>		
+		</div>
+
+		<div id="research-goal-info">
+			<div id="rg-info"><%= render "goals/research_goal" %></div>		
+		</div>		
+		
+	</div>
+
+
+	<div id="footerFF">
+	e~Research Application</div>
+
+</div>
+ 
+</body>
+</html>

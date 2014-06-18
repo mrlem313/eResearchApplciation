@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head>
+  <title>e ~ Research Application</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+</head>
+
+<div id="container">
+	<img src="images/ribbon.png" class="logo"/>
+
+	<div id="header">
+		e~Research Application
+		<div id="sub-header">
+			Identification of the Research
+		</div>
+	</div>
+
+	<div id="menu">
+	<b>Menu</b><br>
+	HTML<br>
+	CSS<br>
+	JavaScript</div>
+
+	<div id="content">
+
+		<div id="proposed-study">
+			<div id="ps-left">Title of Proposed Research Study</div>
+			<div id="ps-right">Content in here</div>		
+		</div>
+
+		<div id="contact-info">
+			<div id="ci-title">Contact Information</div>
+				<div id="ci-rname-left">Reseacher Name</div>
+				<div id="ci-rname-right">Content in here</div>
+				<div id="ci-addr-left">Address</div>
+				<div id="ci-addr-right">Content in here</div>	
+				<div id="ci-hphone-left">Phone Number Name</div>
+				<div id="ci-hphone-right">Content in here</div>
+				<div id="ci-cphone-left">Cell Number</div>
+				<div id="ci-cphone-right">Content in here</div>
+				<div id="ci-email-left">E-mail Address</div>
+				<div id="ci-email-right">Content in here</div>
+				<div id="ci-jobtitle-left">Job Title</div>
+				<div id="ci-jobtitle-right">Content in here</div>				
+				<div id="ci-emp-left">Employer Name</div>
+				<div id="ci-emp-right">Content in here</div>
+				<div id="ci-empaddr-left">Employer Address</div>
+				<div id="ci-empaddr-right">Content in here</div>				
+				<div id="ci-empphone-left">Employer Phone Number</div>
+				<div id="ci-empphone-right">Content in here</div>
+				<div id="ci-empcphone-left">Employer Cell Phone Number</div>
+				<div id="ci-empcphone-right">Content in here</div>
+				<div id="ci-empemail-left">Email Address</div>
+				<div id="ci-empemail-right">Content in here</div>									
+		</div>	
+
+		<div id="addtnl-contact-info">
+			<div id="aci-title">Additional Contact Information</div>
+				<div id="aci-profname-left">Major Professor</div>
+				<div id="aci-profname-right">Content in here</div>
+				<div id="aci-addr-left">Address</div>
+				<div id="aci-addr-right">Content in here</div>	
+				<div id="aci-hphone-left">Phone Number Name</div>
+				<div id="aci-hphone-right">Content in here</div>
+				<div id="aci-email-left">E-mail Address</div>
+				<div id="aci-email-right">Content in here</div>							
+		</div>
+
+		<div id="co-researchers">
+			<div id="co-r-title">Co-Researchers</div>
+			<div id="co-r-s"></div>
+		</div>	
+
+		<div id="sponsors">
+			<div id="spon-title">Sponsor(s) of Research</div>
+			<div id="spon-s"></div>
+		</div>				
+
+	</div>
+
+
+	<div id="footer">
+	e~Research Application</div>
+
+</div>
+ 
+</body>
+</html>

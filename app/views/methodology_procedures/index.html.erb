@@ -1,0 +1,29 @@
+<% title "Methodology Procedures" %>
+
+<table>
+  <tr>
+    <th>Prj Start Date</th>
+    <th>Prj End Date</th>
+    <th>Data Collect Start Date</th>
+    <th>Data Collect End Date</th>
+    <th>No Of Comparison Grps</th>
+    <th>Rel To Research Participants</th>
+    <th>Based On Intervention</th>
+  </tr>
+  <% for methodology_procedure in @methodology_procedures %>
+    <tr>
+      <td><%= methodology_procedure.prj_start_date %></td>
+      <td><%= methodology_procedure.prj_end_date %></td>
+      <td><%= methodology_procedure.data_collect_start_date %></td>
+      <td><%= methodology_procedure.data_collect_end_date %></td>
+      <td><%= methodology_procedure.no_of_comparison_grps %></td>
+      <td><%= methodology_procedure.rel_to_research_participants %></td>
+      <td><%= methodology_procedure.based_on_intervention %></td>
+      <td><%= link_to "Show", methodology_procedure %></td>
+      <td><%= link_to "Edit", edit_methodology_procedure_path(methodology_procedure) %></td>
+      <td><%= link_to "Destroy", methodology_procedure, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Methodology Procedure", new_methodology_procedure_path %></p>

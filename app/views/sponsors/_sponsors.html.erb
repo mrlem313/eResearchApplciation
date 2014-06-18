@@ -1,0 +1,34 @@
+<%# @research_application = ResearchApplication.find_by_id(1) %>
+<% @sponsor = Sponsor.new %>
+
+<div id="sp-title">
+  <div id="sp-title-block">
+  		Sponsor(s) of Research </br>
+  		(Staff member from sponsoring agency or organization.)
+  </div>
+</div>
+
+<div id="sp-1">
+		<%= simple_nested_form_for @sponsor do |f| %>
+			<div id="sp-r-fname-left">First Name</div>
+			<div id="sp-r-fname-right"><%= f.text_field :fname, :maxlength => "75" %></div> 
+			<div id="sp-r-midinit-left">Middle Init</div>
+			<div id="sp-r-midinit-right"><%= f.text_field :midinit, :maxlength => "75" %></div> 
+			<div id="sp-r-lname-left">Last Name</div>
+			<div id="sp-r-lname-right"><%= f.text_field :lname, :maxlength => "75" %></div> 
+			<div id="sp-r-address-left">Address</div>
+			<div id="sp-r-address-right"><%= f.text_field :address, :maxlength => "75" %></div> 
+			<div id="sp-r-city-left">City</div>
+			<div id="sp-r-city-right"><%= f.text_field :city, :maxlength => "75" %></div> 
+			<div id="sp-r-state-left">State</div>
+			<div id="sp-r-state-right"><%= f.text_field :state, :maxlength => "75" %></div>
+			<div id="sp-r-zipcode-left">Zip Code</div>
+			<div id="sp-r-zipcode-right"><%= f.text_field :zipcode, :maxlength => "75" %></div>
+			<div id="sp-r-hphone-left">Phone Number</div>
+			<div id="sp-r-hphone-right"><%= f.text_field :hphone, :maxlength => "75" %></div>    
+			<div id="sp-r-email_addr-left">Email Address</div>
+			<div id="sp-r-email_addr-right"><%= f.text_field :email_addr, :maxlength => "75" %></div>
+			<div id="submit-sp"><%= f.submit %></div>
+			<p><%#= f.link_to_add "Add a field", :sponsor %></p>
+		<% end %>
+</div>

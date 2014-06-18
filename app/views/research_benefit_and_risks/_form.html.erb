@@ -1,0 +1,12 @@
+<%= form_for @research_benefit_and_risk do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :benefit %><br />
+    <%= f.text_field :benefit %>
+  </p>
+  <p>
+    <%= f.label :risk %><br />
+    <%= f.text_field :risk %>
+  </p>
+  <p><%= f.submit %></p>
+<% end %>

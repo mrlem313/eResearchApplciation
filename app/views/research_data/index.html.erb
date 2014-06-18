@@ -1,0 +1,21 @@
+<% title "Research Data" %>
+
+<table>
+  <tr>
+    <th>Data Collected By Researcher</th>
+    <th>Collection Instrument</th>
+    <th>Eta Of Data</th>
+  </tr>
+  <% for research_data in @research_data %>
+    <tr>
+      <td><%= research_data.data_collected_by_researcher %></td>
+      <td><%= research_data.collection_instrument %></td>
+      <td><%= research_data.eta_of_data %></td>
+      <td><%= link_to "Show", research_data %></td>
+      <td><%= link_to "Edit", edit_research_data_path(research_data) %></td>
+      <td><%= link_to "Destroy", research_data, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Research Data", new_research_data_path %></p>

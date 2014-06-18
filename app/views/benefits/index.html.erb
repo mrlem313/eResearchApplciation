@@ -1,0 +1,17 @@
+<% title "Benefits" %>
+
+<table>
+  <tr>
+    <th>Description</th>
+  </tr>
+  <% for benefits in @benefits %>
+    <tr>
+      <td><%= benefits.description %></td>
+      <td><%= link_to "Show", benefits %></td>
+      <td><%= link_to "Edit", edit_benefits_path(benefits) %></td>
+      <td><%= link_to "Destroy", benefits, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Benefits", new_benefits_path %></p>

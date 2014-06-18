@@ -1,0 +1,19 @@
+<% title "Safe Guards" %>
+
+<table>
+  <tr>
+    <th>Description</th>
+    <th>Step</th>
+  </tr>
+  <% for safe_guard in @safe_guards %>
+    <tr>
+      <td><%= safe_guard.description %></td>
+      <td><%= safe_guard.step %></td>
+      <td><%= link_to "Show", safe_guard %></td>
+      <td><%= link_to "Edit", edit_safe_guard_path(safe_guard) %></td>
+      <td><%= link_to "Destroy", safe_guard, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Safe Guard", new_safe_guard_path %></p>

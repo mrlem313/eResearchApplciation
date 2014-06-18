@@ -1,0 +1,12 @@
+<% title "Data Analysis Method" %>
+
+<p>
+  <strong>Description:</strong>
+  <%= @data_analysis_method.description %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_data_analysis_method_path(@data_analysis_method) %> |
+  <%= link_to "Destroy", @data_analysis_method, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", data_analysis_methods_path %>
+</p>

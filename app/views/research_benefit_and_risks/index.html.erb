@@ -1,0 +1,19 @@
+<% title "Research Benefit And Risks" %>
+
+<table>
+  <tr>
+    <th>Benefit</th>
+    <th>Risk</th>
+  </tr>
+  <% for research_benefit_and_risk in @research_benefit_and_risks %>
+    <tr>
+      <td><%= research_benefit_and_risk.benefit %></td>
+      <td><%= research_benefit_and_risk.risk %></td>
+      <td><%= link_to "Show", research_benefit_and_risk %></td>
+      <td><%= link_to "Edit", edit_research_benefit_and_risk_path(research_benefit_and_risk) %></td>
+      <td><%= link_to "Destroy", research_benefit_and_risk, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Research Benefit And Risk", new_research_benefit_and_risk_path %></p>

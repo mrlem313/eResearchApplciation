@@ -1,0 +1,23 @@
+<%= simple_form_for @research_application do |f| %>
+    <div id="app_title">
+      <div id="rs-app-title-left">Title of Proposed Research Study</div>
+      <div id="rs-app-title-right"><%= f.text_field :title, :maxlength => "125" %></div> 
+    </div>
+
+    <div id="app_fname">
+      <div id="rs-app-fname-left">First Name</div>
+      <div id="rs-app-fname-right"><%= f.text_field :fname, :maxlength => "50" %></div> 
+    </div>
+
+    <div id="app_midinit">
+      <div id="rs-app-midinit-left">Middle Initial</div>
+      <div id="rs-app-midinit-right"><%= f.text_field :midinit, :maxlength => "50" %></div> 
+    </div>
+
+    <div id="app_lname">
+      <div id="rs-app-lname-left">Last Name</div>
+      <div id="rs-app-lname-right"><%= f.text_field :lname, :maxlength => "50" %></div>
+    </div> 
+
+    <div id="submit_app"><%= f.submit %></div>
+<% end %>

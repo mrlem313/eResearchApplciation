@@ -1,0 +1,28 @@
+<% title "Research Element" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @research_element.name %>
+</p>
+<p>
+  <strong>Number Involved:</strong>
+  <%= @research_element.number_involved %>
+</p>
+<p>
+  <strong>Group Name:</strong>
+  <%= @research_element.group_name %>
+</p>
+<p>
+  <strong>Grp No Per Class:</strong>
+  <%= @research_element.grp_no_per_class %>
+</p>
+<p>
+  <strong>Classification:</strong>
+  <%= @research_element.classification %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_research_element_path(@research_element) %> |
+  <%= link_to "Destroy", @research_element, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", research_elements_path %>
+</p>

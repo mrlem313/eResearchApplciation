@@ -1,0 +1,298 @@
+$main-color: #989A98;
+
+@mixin rounded-corners($radius) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+
+}
+
+
+
+body {
+  border: 1px #888888 solid;
+  -moz-box-shadow: 0px 0px 2px 2px #888888;
+  -webkit-box-shadow: 0px 0px 2px 2px #888888;
+  box-shadow: 0px 0px 2px 2px #888888; 
+  margin: 10;
+  padding: 10;
+  background-color: #FFF;
+  font-family: verdana;
+  font-size: 14px;
+  height: 85em;
+}
+
+#header {
+  width: inherit;
+  border: 1px #888888 solid;
+  background-color: $main-color;
+  color: #FFF;
+  padding: 4px 100px;
+  border-bottom: solid 1px darken($main-color, 10%);
+  text-indent: 100px;
+
+  h1 {
+    font-size: 60px;
+  }
+
+}
+
+#sub-header {
+  border: 1px #888888 solid;
+  margin-left: 100px;
+  background-color: #DDC291; 
+  width: 77%;
+  padding: 4px 100px;
+  text-align: center;
+}
+
+a {
+  color: $main-color;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+#container {
+  margin: 0px;  
+
+  img {
+    z-index: 10;
+    position: absolute;
+    top: 20px;
+    left: 30px;
+  }
+
+  #proposed-study {
+
+    background-color: #FFF; 
+    width: 77.5%;
+    height: 50px;
+    padding: 4px 10px; 
+    padding-left: 10px;
+    margin-left: 230px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: .9em;
+    font-weight: 600;
+
+
+    #ps-left {  width: 30.5%;
+                height: 66%;  
+                padding-top: 10px;
+                float:left;
+                text-align: center;
+                border: 1px #888888 solid;
+                background-color: #CEE7DA; 
+              }
+
+    #ps-right { width: 69%; 
+                height: 86%;
+                float:right; 
+                border: 1px #888888 solid;
+                background-color: #FFF;
+              } 
+  }
+
+
+  #contact-info {  
+    font-size: .9em;
+    font-weight: 600;  
+
+    #ci-title {  width: 69%;
+                height: 66%;  
+                float:left;
+                text-align: left;
+                width: 75.1%;
+                margin-left: 37px;       
+                padding-left: 30px;
+                padding-top: 5px;
+                padding-bottom: 5px;
+                border: 1px #888888 solid;
+                background-color: #CEE7DA; 
+              } 
+
+    #ci-rname-left, #ci-addr-left, #ci-jobtitle-left,
+    #ci-hphone-left, #ci-cphone-left, #ci-email-left, #ci-emp-left, #ci-empaddr-left,
+    #ci-empphone-left, #ci-empcphone-left, #ci-empemail-left      
+            {   width: 21.3%;
+                height: 66%;  
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 30px;
+                margin-left: 37px; 
+                float:left;
+                text-align: left;
+                font-size: .8em; 
+                border: 1px #888888 solid;
+                color: #888888;
+                background-color: #CEE7DA; 
+              }
+
+    #ci-rname-right, #ci-addr-right, #ci-hphone-right, 
+    #ci-cphone-right, #ci-email-right, #ci-emp-right, #ci-empaddr-right, #ci-empphone-right, 
+    #ci-empcphone-right, #ci-empemail-right, #ci-jobtitle-right
+            {   width: 53.7%; 
+                height: 55%;
+                float:left; 
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border: 1px #888888 solid;
+                background-color: #FFF;
+              }           
+
+  }
+
+
+  #addtnl-contact-info {  
+    font-size: .9em;
+    font-weight: 600;  
+
+      #aci-title {  width: 69%;
+                      height: 66%;  
+                      float:left;
+                      text-align: left;
+                      width: 75.1%;
+                      margin-left: 37px;       
+                      padding-left: 30px;
+                      padding-top: 5px;
+                      padding-bottom: 5px;
+                      border: 1px #888888 solid;
+                      background-color: #CEE7DA;    
+        } 
+
+    #aci-profname-left, #aci-addr-left, #aci-hphone-left, #aci-email-left      
+            {   width: 21.3%;
+                height: 66%;  
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 30px;
+                margin-left: 37px; 
+                float:left;
+                text-align: left;
+                font-size: .8em; 
+                border: 1px #888888 solid;
+                color: #888888;
+                background-color: #CEE7DA; 
+              }
+
+    #aci-profname-right, #aci-addr-right, #aci-hphone-right, #aci-email-right
+            {   width: 53.7%; 
+                height: 55%;
+                float:left; 
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border: 1px #888888 solid;
+                background-color: #FFF;
+              }         
+    }
+
+  #co-researchers {  
+    font-size: .9em;
+    font-weight: 600;   
+
+    #co-r-title {  width: 69%;
+                    height: 66%;  
+                    float:left;
+                    text-align: left;
+                    width: 75.1%;
+                    margin-top: 30px;
+                    margin-left: 37px;       
+                    padding-left: 30px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    border: 1px #888888 solid;
+                    background-color: #CEE7DA; 
+                  } 
+
+    #co-r-fname-left, #co-r-midinit-left, #co-r-lname-left, #co-r-address-left      
+            {   width: 21.3%;
+                height: 66%;  
+                padding-top: 6px;
+                padding-bottom: 6px;
+                padding-left: 30px;
+                margin-left: 37px; 
+                float:left;
+                text-align: left;
+                font-size: .8em; 
+                border: 1px #888888 solid;
+                color: #888888;
+                background-color: #CEE7DA; 
+              }
+
+    #aci-profname-right, #aci-addr-right, #aci-hphone-right, #aci-email-right
+            {   width: 53.7%; 
+                height: 55%;
+                float:left; 
+                padding-top: 4px;
+                padding-bottom: 4px;
+                border: 1px #888888 solid;
+                background-color: #FFF;
+              }                   
+    } 
+
+"><%= 
+co-r-fname-right"><%=
+"><%
+co-r-midinit-right"><
+"><%= 
+co-r-lname-right"><%=
+"><%
+co-r-address-right"><
+co-r-city-left"><%= f
+co-r-city-right"><%= 
+co-r-state-left"><%= 
+co-r-state-right"><%=
+co-r-zipcode-left"><%
+co-r-zipcode-right"><
+co-r-hphone-left"><%=
+co-r-hphone-right"><%
+co-r-cphone-left"><%=
+co-r-cphone-right"><%
+co-r-email_addr-left"
+co-r-email_addr-right
+
+
+    
+
+  #sponsors {  
+    font-size: .9em;
+    font-weight: 600;   
+
+    #spon-title {  width: 69%;
+                    height: 66%;  
+                    float:left;
+                    text-align: left;
+                    width: 75.1%;
+                    margin-top: 30px;
+                    margin-left: 37px;       
+                    padding-left: 30px;
+                    padding-top: 5px;
+                    padding-bottom: 5px;
+                    border: 1px #888888 solid;
+                    background-color: #CEE7DA; 
+                  } 
+    }     
+}
+
+
+
+
+
+#menu {
+  background-color:#8486BE;
+  color: #FFF;
+  width:200px;
+  float:left;
+  height: 79em;
+  border-right: solid 2px darken($main-color, 10%);
+}
+
+#footer {
+  text-align:center;
+  background-color: #DDC291;
+  border-top: solid 2px darken($main-color, 10%);
+  clear: both;
+}
+

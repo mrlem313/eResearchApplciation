@@ -1,0 +1,36 @@
+<% title "Methodology Procedure" %>
+
+<p>
+  <strong>Prj Start Date:</strong>
+  <%= @methodology_procedure.prj_start_date %>
+</p>
+<p>
+  <strong>Prj End Date:</strong>
+  <%= @methodology_procedure.prj_end_date %>
+</p>
+<p>
+  <strong>Data Collect Start Date:</strong>
+  <%= @methodology_procedure.data_collect_start_date %>
+</p>
+<p>
+  <strong>Data Collect End Date:</strong>
+  <%= @methodology_procedure.data_collect_end_date %>
+</p>
+<p>
+  <strong>No Of Comparison Grps:</strong>
+  <%= @methodology_procedure.no_of_comparison_grps %>
+</p>
+<p>
+  <strong>Rel To Research Participants:</strong>
+  <%= @methodology_procedure.rel_to_research_participants %>
+</p>
+<p>
+  <strong>Based On Intervention:</strong>
+  <%= @methodology_procedure.based_on_intervention %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_methodology_procedure_path(@methodology_procedure) %> |
+  <%= link_to "Destroy", @methodology_procedure, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", methodology_procedures_path %>
+</p>

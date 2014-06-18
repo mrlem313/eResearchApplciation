@@ -1,0 +1,23 @@
+<% title "Goals" %>
+
+<table>
+  <tr>
+    <th>Study Significance</th>
+    <th>Rationale</th>
+    <th>Citation</th>
+    <th>Problem Statement</th>
+  </tr>
+  <% for goal in @goals %>
+    <tr>
+      <td><%= goal.study_significance %></td>
+      <td><%= goal.rationale %></td>
+      <td><%= goal.citation %></td>
+      <td><%= goal.problem_statement %></td>
+      <td><%= link_to "Show", goal %></td>
+      <td><%= link_to "Edit", edit_goal_path(goal) %></td>
+      <td><%= link_to "Destroy", goal, :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Goal", new_goal_path %></p>

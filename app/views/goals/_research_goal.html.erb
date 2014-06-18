@@ -1,0 +1,27 @@
+<% @research_goal = Goal.new %>
+
+<div id="rg-title">
+  <div id="rg-title-block">RESEARCH GOALS</div>
+</div>
+
+<div id="rg-rationale">
+	<h3>Rationale for study: </h3></br>
+	<%= simple_form_for @research_goal do |f| %>
+	<%= 'Explain the signifigance of this study and why it should be conducted:' %>
+	<%= f.input :study_signifigance, :label => false, as: :text, :input_html => { :rows => 7 , :style => 'width: 90%'} %>
+
+
+	</br>		
+
+	<%= 'Please cite reserch and/or data that support rationale for the study:' %>
+	<%= f.input :citation, :label => false, as: :text, :input_html => { :rows => 7 , :style => 'width: 90%'} %>
+
+	</br>	
+
+
+	<%= 'Statement of Research Problem:' %>
+	<%= f.input :problem_statement, :label => false, as: :text, :input_html => { :rows => 7 , :style => 'width: 90%'} %>
+
+		<div id="submit-rg"><%= f.submit %></div>
+	<% end %>
+</div>
